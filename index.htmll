@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav>
+            <a href="#home">Domicile</a>
+            <a href="#about">À propos</a>
+            <a href="#work">Travail</a>
+            <a href="#resume">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section "À propos" -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur web débutant passionné par la création de sites Internet simples et efficaces.</p>
+    </section>
+
+    <!-- Section "Travail" -->
+    <section id="work">
+        <h2>Mes Projets</h2>
+        <ul>
+            <li>Projet 1 : Site de blog personnel</li>
+            <li>Projet 2 : Page de portfolio</li>
+            <li>Projet 3 : Application de gestion de tâches</li>
+        </ul>
+        <!-- Vidéo intégrée -->
+        <video width="320" height="240" controls>
+            <source src="mon_projet.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </section>
+
+    <!-- Section "CV" -->
+    <section id="resume">
+        <h2>Mon CV</h2>
+        <table border="1" width="100%">
+            <tr>
+                <th>Poste</th>
+                <th>Entreprise</th>
+                <th>Année</th>
+            </tr>
+            <tr>
+                <td>Développeur Web</td>
+                <td>ABC Tech</td>
+                <td>2023 - Présent</td>
+            </tr>
+            <tr>
+                <td>Stagiaire en Développement</td>
+                <td>XYZ Solutions</td>
+                <td>2021 - 2022</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section "Contact" -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Mon Portfolio - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
